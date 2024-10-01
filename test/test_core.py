@@ -9,4 +9,4 @@ sys.path.append(scripts_dir)
 
 from core import *
 
-print(unblock_port("8000"))
+print(block_port("443"))
