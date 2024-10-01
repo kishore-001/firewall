@@ -4,7 +4,7 @@ import os
 import bcrypt
 
 # File to store user credentials
-CREDENTIALS_FILE = "./opt/credential.json"
+CREDENTIALS_FILE = "/home/black/projects/firewall/scripts/opt/credential.json"
 
 
 def create_user(username, password):
