@@ -1,0 +1,122 @@
+body {
+  background-color: #f0f2f5;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  position: relative; /* Allow positioning of logout button */
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+.logout-box {
+  position: absolute; /* Position the logout button */
+  top: 20px;          /* Distance from the top */
+  right: 20px;       /* Distance from the right */
+}
+
+.filter-box {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.input-group input,
+.input-group select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.block-btn,
+.unblock-btn,
+.reset-btn,
+.logs-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  text-decoration: none; /* Remove underline from links */
+}
+
+.block-btn {
+  background-color: #e74c3c;
+}
+
+.unblock-btn {
+  background-color: #27ae60;
+}
+
+.reset-btn {
+  background-color: #f39c12; /* Orange color for Reset */
+}
+
+.logs-btn {
+  background-color: #3498db; /* Blue color for View Logs */
+}
+
+.logout-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.logout-btn:hover {
+  background-color: #0056b3;
+  align-content: center;
+  justify-content: center;
+}
+
+.messages {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.success {
+  color: green;
+}
+
+.error {
+  color: red;
+}
+
+/* New styles for bottom buttons */
+.bottom-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between buttons */
+  margin-top: 30px; /* Space above buttons */
+}

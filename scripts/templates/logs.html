@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Firewall Logs</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+        margin: 0;
+        padding: 20px;
+      }
+      h1 {
+        text-align: center;
+        color: #343a40;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+      th,
+      td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #dee2e6;
+      }
+      th {
+        background-color: #007bff;
+        color: white;
+      }
+      tr:hover {
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Firewall Rule Logs</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Timestamp</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for entry in log_entries %}
+        <tr>
+          <td>{{ entry.split(' - ')[0] }}</td>
+          <td>{{ entry.split(' - ')[2] }}</td>
+          <!-- Change here -->
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <div style="text-align: center; margin-top: 20px">
+      <a href="/dashboard" class="btn btn-primary">Go Back</a>
+    </div>
+  </body>
+</html>
