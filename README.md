@@ -2,6 +2,8 @@
 
 This project is a Python-based firewall with a web interface built using Flask. It allows users to manage firewall rules, including blocking and unblocking IP addresses, MAC addresses, ports, and protocols (TCP/UDP). It provides a user-friendly dashboard for managing firewall rules, and features authentication and logging for security and traceability.
 
+This project is built using Python as the core scripting language, along with the Linux utility `iptables` for managing firewall rules. The frontend is developed using Flask, a lightweight Python web framework, providing a user-friendly interface for firewall management. Flask handles the web interface, allowing users to easily manage IP, MAC, port, and protocol-based rules through the dashboard. The integration of Python and `iptables` ensures robust firewall functionality, while Flask adds simplicity and flexibility to the user experience. This combination offers a powerful and efficient firewall solution.
+
 ## Features
 
 - **IP Blocking/Unblocking**: Block and unblock IP addresses.
